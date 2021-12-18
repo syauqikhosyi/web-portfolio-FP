@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* All Section */
+section {
+    background-color: white;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background-color: #0A181F;
+    color: white;
+    font-size: 15px;
+}
+
+/* Navbar */
+nav {
+    /* make it inline, and right */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    /* make padding left and right, and adjust the size and weight of the fonts */
+    padding: 0px 30px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+ul {
+    /* make it inline, no dots, and make some padding top and bottom*/
+    display: flex;
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+li {
+    /* make some space and no underline*/
+    width: 100px;
+    text-decoration: none;
+}
+
+a {
+    /* make no underline */
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav List Hovering */
+a:hover {
+    color: #BE6D37;
+    transition: 0.3s ease-in-out;
+}
+
+/* Nav List Active */
+a:active {
+    color: #69ABCE;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+/* Adjust Area */
+.hero-area {
+    /* make it flexible */
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Your Name & Bio */
+.hero-nb {
+    /* adjust the margin to the right & move up the name and bio */
+    margin-left: 80px;
+    margin-bottom: 100px;
+    transition: 1s ease-in;
+}
+
+.hero-nb h1 {
+    /* adjust the name */
+    margin: 0;
+    font-size: 75px;
+}
+
+.hero-nb p {
+    /* adjust the bio */
+    margin: 0;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Button */
+.hero-nb button {
+    /* adjust the button */
+    width: 200px;
+    height: 60px;
+    margin-top: 25px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #BE6D37;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Button Link */
+.hero-nb button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Button Hover */
+.hero-nb button:hover {
+    background-color: white;
+    color: #0A181F;
+}
+
+/* Button Active (when you click) */
+.hero-nb button:active {
+    background-color: #69ABCE;
+}
+
+/* Button Link Hover */
+.hero-nb button a:hover {
+    background-color: white;
+    color: #0A181F;
+}
+
+/* Button Link Active (when you click) */
+.hero-nb button a:active {
+    background-color: #69ABCE;
+}
+
+/* Your Social Media */
+.hero-sm {
+    padding-bottom: 200px;
+}
+
+.insta, .link, .git {
+    /* set the space */
+    margin: 30px;
+}
+
+/* About You Settings*/
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+/* Your Info */
+.information h2 {
+    font-size: 50px;
+}
+
+.information p {
+    font-size: 20px;
+}
+
+/* Your Photo */
+.photo-container {
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    width: 150px;
+    border-radius: 75px;
+    margin-left: 10px;
+}
+
+/* Portfolio Settings*/
+.sub-section-alt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.sub-section-alt h2 {
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-card {
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 20px rgb(182, 182, 182);
+    margin-left: 10px;
+    margin: 10px;
+}
+
+.portfolio-image {
+    width: 250px;
+}
+
+.portfolio-card h3 {
+    margin: 10px;
+}
+
+.subtext {
+    font-size: 15px;
+    margin: 15px;
+}
+
+.subtext hr {
+    margin: 20px;
+}
+
+.portfolio-link {
+    text-decoration: none;
+    color: #BE6D37;
+}
+
+/* Footer */
+footer {
+    background-color: #0A181F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-style {
+    margin:10px auto;
+    width: 400px;
+    padding: 20px 12px 10px 20px;
+}
+
+.form-style td {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.form-style label {
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+
+.form-style .required {
+    color: red;
+}
+
+.form-style input[type=submit], .form-style input[type=reset] {
+    background: #69ABCE;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form-style input[type=submit]:hover, .form-style input[type=reset]:hover {
+    background: #69ABCE;
+    box-shadow: none;
+}
+
+.form-style .field-textarea {
+    height: 100px;
+}
+  
+.form-style input[type=text], .form-style input[type=email], textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    transition: all 0.3s ease-in-out;
+    outline: none;  
+}
+
+.form-style .long{
+    width: 100%;
+}
+
+.form-style input[type=text]:focus, .form-style input[type=email]:focus, .form-style textarea:focus {
+    -moz-box-shadow: 0 0 8px #69ABCE;
+    -webkit-box-shadow: 0 0 8px #69ABCE;
+    box-shadow: 0 0 8px #69ABCE;
+    border: 1px solid #69ABCE;
+}
+
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+  }
+
+/* Responsive */
+/* Big Tablet */
+@media only screen and(max-width: 1024px) {
+    /* Navbar */
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    ul {
+        display: none;
+        background-color: #69ABCE;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    /* Portfolio */
+    .portfolio-container .portfolio-card {
+        /* hmm why doesn't wrapping... */
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: 33%;
+    }
+}
+
+/* Tablet */
+@media screen and(max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+
+    .portfolio-container .portfolio-card {
+        /* hmm why doesn't wrapping... */
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: 50%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px){
+    nav ul {
+        display: none;
+    }
+
+    .portfolio-container .portfolio-card {
+        /* hmm why doesn't wrapping... */
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: 100%;
+    }
+}
